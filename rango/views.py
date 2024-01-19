@@ -10,3 +10,7 @@ def index(request):
     # Note that the first parameter is the template we wish to use.
     return render(request, 'rango/index.html', context=context_dict)
 
+def about(request):
+    context_dict = {'boldmessage': 'This page has been assembled.'}
+
+    return render(request, 'rango/about.html', context = context_dict)
